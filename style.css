@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #FDFCD9;
+  color: #2C0E0E;
+  font-family: 'Roboto Slab', serif;
+}
+
+.navbar-section {
+  position: fixed;
+  width: 19rem;
+  height: 100%;
+  overflow: auto;
+  padding: 2rem 0rem 2rem 2rem;
+  z-index: 1;
+}
+
+.navbar-section > ul {
+  list-style: none;
+}
+
+#navbar-header {
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1.75;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  font-weight: 500;
+}
+
+.navbar-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+ /* Handle on hover */
+.navbar-section::-webkit-scrollbar-thumb:hover {
+  background: #2C0E0E; 
+  border-radius: 10px;
+}
+
+#hamburger-menu {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 0.4rem 0.75rem 0rem 0.75rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#close-btn {
+  display: none;
+  position: fixed;
+  top: 0.5rem;
+  right: 0.7rem;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  left: 20rem;
+  padding: 1rem 1rem 2rem 0.75rem;
+  line-height: 1.5;
+}
+
+.section-header {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.main-section {
+  padding: 2rem 0.5rem;
+}
+
+.main-section > h2 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.main-section > p {
+  margin-bottom: 0.75rem;
+}
+
+.main-section > ul {
+  margin-top: 0.75rem;
+  padding-left: 2.25rem;
+}
+
+ul:nth-child(2) {
+  padding-left: 2.25rem;
+}
+
+.bullet-point-header {
+  font-weight: 500;
+}
+
+code {
+  display: block;
+  border-radius: 10px;
+  background-color: #FDFDFD;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.11);
+  font-family: 'Mono Space', monospace;
+  line-height: 1.75;
+  padding: 1rem;  
+  margin: 1.75rem 0;
+  max-width: 38rem;
+  word-break: break-word;
+}
+
+
+@media (max-width: 930px) {
+  
+  .navbar-section {
+    width: 15rem;
+  }
+  
+  #main-doc {
+    left: 15.85rem;
+    top: 1.5rem;
+  }
+  
+  code {
+    max-width: 35rem;
+  }
+  
+}
+
+@media (max-width: 860px) {
+   
+  .navbar-section {
+    display: none;
+    width: 100%;
+    height: 60%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.11);
+    text-align: center;
+    line-height: 2.5;
+  }
+    
+  .navbar-section.show {
+    display: block;
+  }
+  
+  #main-doc {
+    left: 0;
+    padding: 0.75rem 1.5rem 2rem 1.5rem;
+  }
+  
+  #hamburger-menu {
+    display: block;
+  }
+  
+  #close-btn {
+    display: block;  
+  }
+ 
+}
+
+
+
+
